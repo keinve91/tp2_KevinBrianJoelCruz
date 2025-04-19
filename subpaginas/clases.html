@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/icono.png" type="image/png">
+    <title>FitnessPro</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/clases.css">
+    <link rel="stylesheet" href="/css/headeryfooter.css">
+</head>
+<body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+      <p class="text-light mb-0 p-2 fs-6">APU de la Facultad de Ingenieria de Jujuy - Cruz Kevin</p>
+    </header>
+    <main>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><i class="fas fa-dumbbell"></i>FitnessPro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/index.html#hero-section">Inicio</a> </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="clases.html">Clases</a></li> 
+                            <li><a class="dropdown-item" href="entrenadores.html">Entrenadores</a></li>
+                            <li><a class="dropdown-item" href="precios.html">Precios</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#testimonios">Testimonios</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+
+        <div class="filtros text-center my-3">
+          <button class="btn btn-outline-primary filtro-btn" data-filtro="todos">Todas</button>
+          <button class="btn btn-outline-primary filtro-btn" data-filtro="salon1">Salón 1</button>
+          <button class="btn btn-outline-primary filtro-btn" data-filtro="salon2">Salón 2</button>
+          <button class="btn btn-outline-primary filtro-btn" data-filtro="salon3">Salón 3</button>
+          <button class="btn btn-outline-primary filtro-btn" data-filtro="salon4">Salón 4</button>
+        </div>
+    </div>
+      
+      <section>
+        <h2 style="text-align: center;">Clases</h2>
+        <div class="galeria-masonry" id="galeria-clases">
+          <div class="col" data-salon="salon1">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/bodypump.jpg" class="card-img-top" alt="Bodypump">
+                <div class="overlay">Bodypump</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Clase de fuerza y resistencia con barra y discos.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon2">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/boxeo.jpeg" class="card-img-top" alt="Boxeo">
+                <div class="overlay">Boxeo</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Entrenamiento de combate y resistencia física.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon3">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/calistenia.jpeg" class="card-img-top" alt="Calistenia">
+                <div class="overlay">Calistenia</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Entrenamiento con el peso corporal.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon1">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/crossfit.webp" class="card-img-top" alt="Crossfit">
+                <div class="overlay">Crossfit</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Ejercicios funcionales de alta intensidad.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon4">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/elongacion.webp" class="card-img-top" alt="Elongación">
+                <div class="overlay">Elongación</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Mejorá tu flexibilidad y relajación muscular.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon1">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/funcional.jpg" class="card-img-top" alt="Funcional">
+                <div class="overlay">Funcional</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Entrenamiento para todo el cuerpo.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon1">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/gap.webp" class="card-img-top" alt="GAP">
+                <div class="overlay">GAP</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Glúteos, abdomen y piernas al máximo.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon2">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/kickboxing.jpg" class="card-img-top" alt="Kickboxing">
+                <div class="overlay">Kickboxing</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Combate, cardio y coordinación en una clase.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon3">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/musculacion2.webp" class="card-img-top" alt="Musculación">
+                <div class="overlay">Musculación</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Aumento de fuerza y masa muscular.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon3">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/powerlifting.jpg" class="card-img-top" alt="Powerlifting">
+                <div class="overlay">Powerlifting</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Fuerza máxima con ejercicios de levantamiento.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon4">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/spinning.jpg" class="card-img-top" alt="Spinning">
+                <div class="overlay">Spinning</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Cardio intenso sobre bicicleta fija.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-salon="salon1">
+            <div class="card zoom-card">
+              <div class="card-img-container">
+                <img src="/media/clases/zumba.webp" class="card-img-top" alt="Zumba">
+                <div class="overlay">Zumba</div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Baile, diversión y quema de calorías.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="horarios">
+        <h2 style="text-align: center;">Horarios Semanales por Salon</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th>Horario</th>
+                      <th>Lunes</th>
+                      <th>Martes</th>
+                      <th>Miércoles</th>
+                      <th>Jueves</th>
+                      <th>Viernes</th>
+                      <th>Sábado</th>
+                      <th>Profesores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>08:00 - 09:30</td>
+                      <td>CrossFit</td>
+                      <td>BodyPump</td>
+                      <td>CrossFit</td>
+                      <td>BodyPump</td>
+                      <td>CrossFit</td>
+                      <td>BodyPump</td>
+                      <td>Facundo Sánchez<br>(Salon1)</td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:30</td>
+                      <td>Zumba</td>
+                      <td>Funcional</td>
+                      <td>GAP</td>
+                      <td>Zumba</td>
+                      <td>Funcional</td>
+                      <td>GAP</td>
+                      <td>Facundo Sánchez<br>(Salon1)</td>
+                    </tr>
+                    <tr>
+                      <td>16:00 - 18:00</td>
+                      <td>CrossFit</td>
+                      <td>BodyPump</td>
+                      <td>CrossFit</td>
+                      <td>BodyPump</td>
+                      <td>CrossFit</td>
+                      <td>BodyPump</td>
+                      <td>Luciana Benítez<br>(Salon1)</td>
+                    </tr>
+                    <tr>
+                      <td>18:00 - 19:30</td>
+                      <td>GAP</td>
+                      <td>Funcional</td>
+                      <td>Zumba</td>
+                      <td>Funcional</td>
+                      <td>Zumba</td>
+                      <td>GAP</td>
+                      <td>Luciana Benítez<br>(Salon1)</td>
+                    </tr>
+              
+                    <tr>
+                      <td>08:00 - 10:00</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Ricardo Fernández <br>(Salon2)</td>
+                    </tr>
+                    <tr>
+                      <td>14:00 - 16:00</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Horacio Rodríguez<br>(Salon2)</td>
+                    </tr>
+                    <tr>
+                      <td>20:00 - 22:00</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Boxeo</td>
+                      <td>Kick Boxing</td>
+                      <td>Agustín Pereyra<br>(Salon2)</td>
+                    </tr>
+                     <tr>
+                      <td>09:00 - 10:00</td>
+                      <td>Elongación</td>
+                      <td>Spinning</td>
+                      <td>Elongación</td>
+                      <td>Spinning</td>
+                      <td>Elongación</td>
+                      <td>Spinning</td>
+                      <td>Valentina Pérez<br>(Salon4)</td>
+                    </tr>
+              
+                    <tr>
+                      <td>07:00 - 10:00</td>
+                      <td></td>
+                      <td>Powerlifting</td>
+                      <td></td>
+                      <td>PowerLifting</td>
+                      <td></td>
+                      <td>Powerlifting</td>
+                      <td>Bruno Castillo<br>(Salon3)</td>
+                    </tr>
+                    <tr>
+                      <td>15:00 - 18:00</td>
+                      <td>PowerLifting</td>
+                      <td></td>
+                      <td>Powerlifting</td>
+                      <td></td>
+                      <td>PowerLifting</td>
+                      <td></td>
+                      <td>Bruno Castillo<br>(Salon3)</td>
+                    </tr>
+                    <tr>
+                      <td>18:30 - 20:30</td>
+                      <td>Calistenia</td>
+                      <td></td>
+                      <td>Calistenia</td>
+                      <td></td>
+                      <td>Calistenia</td>
+                      <td></td>
+                      <td>Matías Alvarez<br>(Salon3)</td>
+                    </tr>
+                  </tbody>
+            </table>
+          </div>
+        
+      </section>
+    </main>
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="footer-contenido">
+                <div class="columna-footer">
+                    <h4>Inscribirse al Gym</h4>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="email-newsletter" class="visually-hidden">Correo electrónico</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email-newsletter"
+                                placeholder="Tu correo electrónico"
+                                required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="columna-footer">
+                    <h4>Síguenos</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12A10 10 0 1 0 12 22v-7h-2v-3h2v-2c0-2 1-3 3-3h2v3h-1c-.6 0-1 .4-1 1v1h2.5l-.5 3H15v7a10 10 0 0 0 7-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="columna-footer">
+                    <h4>Encuéntranos</h4>
+                    <address>
+                        Av. Siempre Viva 742<br>
+                        San Salvador de Jujuy, Jujuy<br>
+                        Argentina
+                    </address>
+                    <div class="mapa-container">
+                      <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3318%2C-24.2109%2C-65.2718%2C-24.1709&layer=mapnik&marker=-24.1909%2C-65.3018"
+                        style="width: 100%; height: 200px; border: 0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación del Gimnasio FitnessPro">
+                      </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3">
+            <p>&copy; <span id="current-year"></span> Gimnasio FitnessPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/clases.js"></script>
+    <script src="/js/footer.js"></script>
+
+</body>
+</html>
