@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/icono.png" type="image/png">
+    <title>FitnessPro</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/headeryfooter.css">
+</head>
+<body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">APU de la Facultad de Ingenieria de Jujuy - Cruz Kevin</p>
+    </header>
+    <main>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-dumbbell"></i>FitnessPro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero-section">Inicio</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="subpaginas/clases.html">Clases</a></li> 
+                            <li><a class="dropdown-item" href="subpaginas/entrenadores.html">Entrenadores</a></li>
+                            <li><a class="dropdown-item" href="subpaginas/precios.html">Precios</a></li>
+                            <li><a class="dropdown-item" href="subpaginas/blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <video src="/media/introduccion.mp4" autoplay muted loop playsinline class="hero-video object-fit-fill">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="hero-overlay">
+            <h1 class="hero-title">¡Desafiá tus límites!</h1>
+            <p class="hero-subtitle">Entrenamientos que transforman cuerpo y mente</p>
+            <a href="subpaginas/formulario.html" class="btn btn-hero">Inscribirse</a>
+        </div>
+    </section>
+    <section class="container my-4">
+        <h2 class="text-center mb-4">Clases Destacadas</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="media/clases/crossfit.webp" class="card-img-top" alt="Entrenamiento_Crossfit">
+                    <div class="card-body">
+                        <h5 class="card-title">Crossfit</h5>
+                        <p class="card-text">Entrenamiento de alta intensidad con ejercicios de levantamiento de pesas, gimnasia y condicionamiento metabólico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="media/clases/musculacion2.webp" class="card-img-top" alt="Entrenamiento_musculacion">
+                    <div class="card-body">
+                        <h5 class="card-title">Musculación</h5>
+                        <p class="card-text">Entrenamiento con pesas para aumentar la masa muscular y la fuerza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="media/clases/funcional.jpg" class="card-img-top" alt="Entrenamiento_Funcional">
+                    <div class="card-body">
+                        <h5 class="card-title">Funcional</h5>
+                        <p class="card-text">Fuerza, coordinación y resistencia con circuitos dinámicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="media/clases/powerlifting.jpg" class="card-img-top" alt="Clases_Powerlifting">
+                    <div class="card-body">
+                        <h5 class="card-title">PowerLifting</h5>
+                        <p class="card-text">Levantamiento de pesas con enfoque a la fuerza máxima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto mt-4">
+            <a href="subpaginas/clases.html" class="btn btn-primary" role="button">VER MAS</a> </div>
+    </section>
+
+    <section class="contador text-center py-5 bg-light">
+        <h2><span id="contador-socios" data-target="500">0</span>+ socios satisfechos</h2>
+    </section>
+
+    <section class="testimonios container my-5" id="testimonios">
+        <h2 class="text-center mb-4">Lo que dicen nuestros socios</h2>
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center h-100 p-5">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"Si buscas un gimnasio con onda, buenos equipos y profesionales de primera, FitnessPro es tu lugar. El ambiente es familiar, te hacen sentir cómodo y te ayudan a alcanzar tus metas. ¡No lo dudes!"</p>
+                            <footer class="blockquote-footer">Matías Rodríguez<cite title="Cargo o Descripción"><br>Cliente Satisfecho</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center h-100 p-5">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"Siempre fui bastante sedentaria, pero en FitnessPro me encontré con un equipo que me hizo cambiar el chip. Las clases son divertidas, los entrenadores son unos genios y el ambiente es súper motivador. ¡Me siento más fuerte y con más energía que nunca!"</p>
+                            <footer class="blockquote-footer">Leona Diaz<cite title="Cargo o Descripción"><br>Clienta Satisfecha</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center h-100 p-5">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"¡FitnessPro es un golazo! Llegué buscando mejorar mi estado físico y encontré mucho más: un ambiente increíble, instructores que te motivan a dar el máximo y resultados que me dejaron con la boca abierta. ¡Recomendado al 100%!"</p>
+                            <footer class="blockquote-footer">Agustín Moreno <cite title="Cargo o Descripción"><br>Usuario Frecuente</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center h-100 p-5">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"Después de probar varios gimnasios, FitnessPro es el que me conquistó. La variedad de actividades, la atención personalizada y la buena onda de todos hacen que entrenar sea un placer. ¡Gracias por ayudarme a alcanzar mis objetivos!"</p>
+                            <footer class="blockquote-footer">Santiago Fernández<cite title="Cargo o Descripción"><br>Clinte Satisfecho</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center h-100 p-5">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-3">"Llegué a FitnessPro buscando mejorar mi condición física para correr una maratón. Gracias a su excelente programa de entrenamiento y a la motivación de los instructores, logré mi objetivo y mucho más. ¡Super recomendado!"</p>
+                            <footer class="blockquote-footer">Camila Pérez<cite title="Cargo o Descripción"><br>Cliente Satisfecha</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    </main>
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="footer-contenido">
+                <div class="columna-footer">
+                    <h4>Inscribirse al Gym</h4>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="email-newsletter" class="visually-hidden">Correo electrónico</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email-newsletter"
+                                placeholder="Tu correo electrónico"
+                                required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="columna-footer">
+                    <h4>Síguenos</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12A10 10 0 1 0 12 22v-7h-2v-3h2v-2c0-2 1-3 3-3h2v3h-1c-.6 0-1 .4-1 1v1h2.5l-.5 3H15v7a10 10 0 0 0 7-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="columna-footer">
+                    <h4>Encuéntranos</h4>
+                    <address>
+                        Av. Siempre Viva 742<br>
+                        San Salvador de Jujuy, Jujuy<br>
+                        Argentina
+                    </address>
+                    <div class="mapa-container">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3318%2C-24.2109%2C-65.2718%2C-24.1709&layer=mapnik&marker=-24.1909%2C-65.3018"
+                            style="width: 100%; height: 200px; border: 0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación del Gimnasio FitnessPro">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3">
+            <p>&copy; <span id="current-year"></span> Gimnasio FitnessPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
