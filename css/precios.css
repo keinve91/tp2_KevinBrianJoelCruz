@@ -1,0 +1,71 @@
+/* Estilos para resaltar fila y columna en la tabla */
+#comparisonTable .highlight-row > * {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  #comparisonTable .highlight-col {
+    background-color: rgba(0, 123, 255, 0.15) !important;
+  }
+  
+  /* Estilos para el Toggle Switch (Ajustes opcionales) */
+  .form-switch .form-check-input {
+    cursor: pointer;
+    width: 3.5em; 
+    height: 1.8em;
+  }
+  
+  /* Estilos para Tooltips Personalizados (si no usas los de Bootstrap) */
+  .tooltip-custom {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: help;
+  }
+  
+  .tooltip-custom .tooltiptext-custom {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Flecha del tooltip */
+  .tooltip-custom .tooltiptext-custom::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip-custom:hover .tooltiptext-custom {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Estilo adicional para la tarjeta destacada */
+  .card.border-primary {
+      border-width: 2px !important;
+  }
+  
+  .plan-card .plan-title {
+      font-weight: 600;
+  }
+  
+  /* Asegurar que la tabla se vea bien en móviles */
+  .table-responsive {
+      overflow-x: auto;
+  }

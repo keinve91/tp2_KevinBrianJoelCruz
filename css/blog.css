@@ -1,0 +1,150 @@
+/* --- Estilos Blog --- */
+
+/* Ajuste para los filtros */
+.filter-btn-group .btn {
+    margin-bottom: 0.5rem; /* Espacio en móvil */
+}
+
+/* Efecto sutil en las cards del blog */
+.blog-post .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-post .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important; /* Sombra más pronunciada */
+}
+
+/* Para asegurar que la imagen no desborde la card redondeada */
+.blog-post .card img {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+}
+
+
+/* --- Estilos Comentarios --- */
+.comment-bubble {
+    background-color: #f8f9fa; /* Un fondo ligero para el comentario */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+    position: relative; /* Necesario para pseudo-elementos si se usan para la flecha */
+}
+
+/* Opcional: Flecha para la burbuja de comentario (descomentar y ajustar si se desea) */
+/* .comment-bubble::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -10px; // Ajustar posición
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #f8f9fa transparent transparent;
+} */
+
+.comment-actions a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.comment-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo base para los avatares con iniciales */
+.avatar-iniciales {
+    background-color: #6c757d; /* Color de fondo gris Bootstrap (secondary) */
+    color: #fff;           /* Color del texto (iniciales) */
+    font-weight: bold;
+    border-radius: 50%;    /* Para hacerlo circular */
+    display: flex;         /* Para centrar las iniciales vertical y horizontalmente */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;        /* Asegura que el texto no tenga interlineado extra */
+    /* Opcional: Añadir una pequeña sombra o borde si se desea */
+    /* border: 1px solid rgba(0,0,0,0.1); */
+}
+
+/* Tamaño para avatares de comentarios principales */
+.avatar-main {
+    width: 60px;  /* Mismo ancho que la imagen placeholder original */
+    height: 60px; /* Mismo alto que la imagen placeholder original */
+    font-size: 20px; /* Tamaño de fuente adecuado para el contenedor */
+}
+
+/* Tamaño para avatares de respuestas (más pequeños) */
+.avatar-reply {
+    width: 40px;  /* Ancho reducido para respuestas */
+    height: 40px; /* Alto reducido para respuestas */
+    font-size: 16px; /* Fuente más pequeña para avatar más pequeño */
+}
+
+/* Ya no se necesitan las reglas específicas para 'img.rounded-circle' dentro de #commentsSection */
+/*
+#commentsSection img.rounded-circle {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#commentsSection .ps-5 img.rounded-circle {
+     width: 40px;
+     height: 40px;
+}
+*/
+
+/* El estilo .avatar-iniciales definido al inicio del CSS ya no necesita esta regla duplicada */
+/*
+.avatar-iniciales {
+    width: 60px;
+    height: 60px;
+    background-color: #777;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+/* Estilo para el enlace de Like cuando está activo */
+.comment-actions a.like-link.liked {
+    color: var(--bs-primary) !important; /* Usa el color primario de Bootstrap */
+    font-weight: bold; /* Opcional: hacerlo negrita */
+}
+
+/* Asegura que el ícono dentro del enlace 'liked' también tome el color */
+.comment-actions a.like-link.liked i {
+    color: var(--bs-primary) !important;
+}
+
+/* Opcional: Cursor pointer para todos los enlaces de acciones */
+.comment-actions a {
+    cursor: pointer;
+}
+/* Estilo para resaltar el comentario al que se está respondiendo */
+.comment.replying-to-highlight {
+    background-color: #eef2f7; /* Un color de fondo muy sutil, ajústalo a tu gusto */
+    border-left: 3px solid var(--bs-primary); /* Un borde izquierdo del color primario */
+    transition: background-color 0.3s ease, border-left 0.3s ease;
+    /* Ajuste de padding para compensar el borde izquierdo y mantener alineación */
+    /* Padding original + grosor del borde */
+    padding-left: calc(1rem + 3px) !important; /* Para comentarios nivel 1 */
+    margin-left: -3px; /* Compensar el desplazamiento por el borde */
+    border-top-left-radius: 0; /* Quitar redondeo donde está el borde */
+    border-bottom-left-radius: 0;
+}
+
+/* Ajuste específico para respuestas ya indentadas (ps-5) que están siendo respondidas */
+.comment.ps-5.replying-to-highlight {
+     /* ps-5 usualmente aplica padding-left: 3rem !important; */
+     /* Calculamos: padding original (3rem) + grosor borde (3px) */
+    padding-left: calc(3rem + 3px) !important;
+     margin-left: -3px; /* Compensar el desplazamiento por el borde */
+}
+
+/* Estilo opcional para el texto indicador en el formulario */
+#replyingToInfo {
+    font-weight: 500; /* Un poco más de peso */
+}

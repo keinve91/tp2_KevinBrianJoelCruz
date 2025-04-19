@@ -1,0 +1,126 @@
+/* css/index.css - Estilos específicos para index.html */
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    overflow: hidden;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+.hero-video {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* La clase object-fit-fill ya está en el HTML, la regla object-fit: cover aquí es más común */
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 90%;
+}
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 1.5rem;
+    color: #eee;
+}
+.btn-hero {
+
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-hero:hover {
+    background-color: var(--color-link-hover);
+    border-color: var(--color-link-hover);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+/* --- Sección Clases Destacadas (Cards Bootstrap) --- */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+section .card { 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+/* --- Sección Contador --- */
+.contador h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+
+
+
+/* --- Sección Testimonios (Carousel Bootstrap) --- */
+.testimonios .carousel-item {
+    min-height: 300px;
+    padding-bottom: 50px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.testimonios .carousel-item:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimonios blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    max-width: 800px;
+    color: #333;
+}
+
+[data-theme="dark"] .testimonios blockquote {
+    color: #ddd;
+}
+
+/* Controles del carrusel personalizados */
+.testimonios .carousel-control-prev,
+.testimonios .carousel-control-next {
+    width: auto;
+    opacity: 0.6;
+    transition: opacity 0.1s;
+}
+
+.testimonios .carousel-control-prev:hover,
+.testimonios .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.testimonios .carousel-control-prev-icon,
+.testimonios .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 1.4rem;
+    background-size: 60%;
+}
+
+[data-theme="dark"] .testimonios .carousel-control-prev-icon,
+[data-theme="dark"] .testimonios .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.3);
+}

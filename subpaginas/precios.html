@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/icono.png" type="image/png">
+
+    <title>FitnessPro</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/precios.css">
+    <link rel="stylesheet" href="/css/headeryfooter.css">
+</head>
+<body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">APU de la Facultad de Ingenieria de Jujuy - Cruz Kevin</p>
+    </header>
+    <main>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><i class="fas fa-dumbbell"></i>FitnessPro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html#hero-section">Inicio</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="clases.html">Clases</a></li> 
+                            <li><a class="dropdown-item" href="entrenadores.html">Entrenadores</a></li>
+                            <li><a class="dropdown-item" href="precios.html">Precios</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#testimonios">Testimonios</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Nuestros Planes</h1>
+    
+        <div class="d-flex justify-content-center align-items-center mb-5">
+            <span class="pe-3">Mensual</span>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="priceToggle" aria-label="Cambiar entre precio mensual y anual">
+            </div>
+            <span class="ps-3">Anual</span>
+        </div>
+    
+        <div class="row justify-content-center">
+    
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm plan-card">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-center plan-title">Musculación Estándar</h3>
+                        <div class="text-center plan-price my-3">
+                            <span class="price-monthly fs-2 fw-bold">$25.000 <span class="period fs-6 fw-normal text-muted">/mes</span></span>
+                            <span class="price-anual fs-2 fw-bold" style="display: none;">$250.000 <span class="period fs-6 fw-normal text-muted">/año</span></span>
+                        </div>
+                        <div class="plan-details text-center mb-4">
+                             <div class="details-monthly">
+                                <span class="tooltip-custom">Acceso ilimitado
+                                    <span class="tooltiptext-custom">Solo área de musculación</span>
+                                </span>
+                             </div>
+                             <div class="details-anual" style="display: none;">
+                                 <span class="tooltip-custom">Acceso ilimitado
+                                     <span class="tooltiptext-custom">Paga 10 meses y entrena todo el año</span>
+                                 </span>
+                             </div>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary mt-auto w-100">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow border-primary plan-card">
+                     <div class="card-header bg-primary text-white text-center">Más Popular</div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-center plan-title">Musculación Premium</h3>
+                        <div class="text-center plan-price my-3">
+                            <span class="price-monthly fs-2 fw-bold">$35.000 <span class="period fs-6 fw-normal text-muted">/mes</span></span>
+                            <span class="price-anual fs-2 fw-bold" style="display: none;">$350.000 <span class="period fs-6 fw-normal text-muted">/año</span></span>
+                        </div>
+                        <div class="plan-details text-center mb-4">
+                             <div class="details-monthly">
+                                <span class="tooltip-custom">Incluye 1 clase
+                                    <span class="tooltiptext-custom">Crossfit, Zumba, GAP, etc.</span>
+                                </span>
+                             </div>
+                             <div class="details-anual" style="display: none;">
+                                 <span class="tooltip-custom">Incluye 1 clase fija
+                                     <span class="tooltiptext-custom">A elección por todo el año</span>
+                                 </span>
+                             </div>
+                        </div>
+                         <a href="#" class="btn btn-primary mt-auto w-100">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm plan-card">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title text-center plan-title">Clases Sueltas (x2)</h3>
+                        <div class="text-center plan-price my-3">
+                            <span class="price-monthly fs-2 fw-bold">$28.000 <span class="period fs-6 fw-normal text-muted">/mes</span></span>
+                            <span class="price-anual fs-2 fw-bold" style="display: none;">$280.000 <span class="period fs-6 fw-normal text-muted">/año</span></span>
+                        </div>
+                        <div class="plan-details text-center mb-4">
+                             <div class="details-monthly">
+                                <span class="tooltip-custom">2 clases mensuales
+                                    <span class="tooltiptext-custom">A elección entre 9 disciplinas</span>
+                                </span>
+                             </div>
+                             <div class="details-anual" style="display: none;">
+                                 <span class="tooltip-custom">24 clases al año
+                                     <span class="tooltiptext-custom">2 por mes durante 12 meses</span>
+                                 </span>
+                             </div>
+                        </div>
+                         <a href="#" class="btn btn-outline-primary mt-auto w-100">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div> <h2 class="text-center mt-5 mb-4">Tabla Comparativa</h2>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped text-center align-middle" id="comparisonTable">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col" style="width: 40%;">Característica</th>
+                        <th scope="col">Estándar</th>
+                        <th scope="col">Premium</th>
+                        <th scope="col">Clases (x2)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Acceso Musculación</th>
+                        <td><i class="fas fa-check text-success"></i></td>
+                        <td><i class="fas fa-check text-success"></i></td>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Acceso Clases Grupales</th>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                        <td>1 por mes / 1 fija anual</td>
+                        <td>2 por mes / 24 anuales</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Seguimiento Personalizado</th>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                        <td><i class="fas fa-check text-success"></i></td>
+                        <td><i class="fas fa-check text-success"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Acceso a Vestuarios</th>
+                        <td><i class="fas fa-check text-success"></i></td>
+                        <td><i class="fas fa-check text-success"></i></td>
+                        <td><i class="fas fa-check text-success"></i></td>
+                    </tr>
+                     <tr>
+                        <th scope="row" class="text-start">Descuento Tienda</th>
+                        <td>5%</td>
+                        <td>10%</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div> </div> 
+    </main>
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="footer-contenido">
+                <div class="columna-footer">
+                    <h4>Inscribirse al Gym</h4>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="email-newsletter" class="visually-hidden">Correo electrónico</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email-newsletter"
+                                placeholder="Tu correo electrónico"
+                                required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="columna-footer">
+                    <h4>Síguenos</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12A10 10 0 1 0 12 22v-7h-2v-3h2v-2c0-2 1-3 3-3h2v3h-1c-.6 0-1 .4-1 1v1h2.5l-.5 3H15v7a10 10 0 0 0 7-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="columna-footer">
+                    <h4>Encuéntranos</h4>
+                    <address>
+                        Av. Siempre Viva 742<br>
+                        San Salvador de Jujuy, Jujuy<br>
+                        Argentina
+                    </address>
+                    <div class="mapa-container">
+                        <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3318%2C-24.2109%2C-65.2718%2C-24.1709&layer=mapnik&marker=-24.1909%2C-65.3018"
+                        style="width: 100%; height: 200px; border: 0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación del Gimnasio FitnessPro">
+                      </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3">
+            <p>&copy; <span id="current-year"></span> Gimnasio FitnessPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/precios.js"></script>
+    <script src="/js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/icono.png" type="image/png">
+
+    <title>FitnessPro</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/headeryfooter.css">
+</head>
+<body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">APU de la Facultad de Ingenieria de Jujuy - Cruz Kevin</p>
+    </header>
+    <main>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><i class="fas fa-dumbbell"></i>FitnessPro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html#hero-section">Inicio</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/subpaginas/clases.html">Clases</a></li> 
+                            <li><a class="dropdown-item" href="/subpaginas/entrenadores.html">Entrenadores</a></li>
+                            <li><a class="dropdown-item" href="/subpaginas/precios.html">Precios</a></li>
+                            <li><a class="dropdown-item" href="/subpaginas/blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#testimonios">Testimonios</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+
+        <h2 class="text-center mb-4">Nuestro Blog Fitness</h2>
+    
+        <div class="text-center mb-5 filter-btn-group" role="group" aria-label="Filtros de categorías del blog">
+            <input type="radio" class="btn-check" name="blogFilter" id="filterAll" data-filter="all" checked>
+            <label class="btn btn-outline-primary me-2" for="filterAll">Todos</label>
+    
+            <input type="radio" class="btn-check" name="blogFilter" id="filterNutricion" data-filter="nutricion">
+            <label class="btn btn-outline-primary me-2" for="filterNutricion">Nutrición</label>
+    
+            <input type="radio" class="btn-check" name="blogFilter" id="filterMusculacion" data-filter="musculacion">
+            <label class="btn btn-outline-primary me-2" for="filterMusculacion">Musculación</label>
+    
+            <input type="radio" class="btn-check" name="blogFilter" id="filterBienestar" data-filter="bienestar">
+            <label class="btn btn-outline-primary" for="filterBienestar">Bienestar</label>
+        </div>
+    
+        <div class="row g-4" id="blogPostsContainer">
+    
+            <div class="col-12 col-md-6 col-lg-4 blog-post" data-tags="nutricion" data-aos="fade-up">
+                <div class="card h-100 shadow-sm">
+                    <img src="/media/blog/perdida_de_cabello.webp" class="card-img-top" alt="Artículo destacado sobre nutrición">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary align-self-start mb-2">Nutrición</span>
+                        <h5 class="card-title">Todo el mundo habla maravillas del ayuno intermitente pero hay una cosa que nadie te cuenta: afecta a tu pelo.</h5>
+                        <p class="card-text small text-muted">16 de Abril, 2025</p>
+                        <p class="card-text">Como todo, el ayuno intermitente también tiene su cara B y puede no ser apto para todos.</p>
+                        <a href="https://www.vitonica.com/dietas/nos-contaron-muchas-ventajas-ayuno-intermitente-se-les-olvido-pequeno-detalle-puede-dejarnos-calvos" class="btn btn-sm btn-outline-secondary mt-auto align-self-start">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 blog-post" data-tags="musculacion" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow-sm">
+                    <img src="/media/blog/rutina_brazos.webp" class="card-img-top" alt="Rutina Full Brazo">
+                    <div class="card-body d-flex flex-column">
+                         <span class="badge bg-danger align-self-start mb-2">Musculación</span>
+                         <h5 class="card-title">La rutina de brazos para ganar músculo.</h5>
+                         <p class="card-text small text-muted">15 de Abril, 2025</p>
+                         <p class="card-text">Una rutina para entrenar tus brazos al completo en el gimnasio.</p>
+                         <a href="https://www.vitonica.com/entrenamiento/rutina-para-entrenar-tus-brazos-al-completo-gimnasio" class="btn btn-sm btn-outline-secondary mt-auto align-self-start">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 blog-post" data-tags="bienestar" data-aos="fade-up" data-aos-delay="200">
+                 <div class="card h-100 shadow-sm">
+                    <img src="/media/blog/bebidas.webp" class="card-img-top" alt="Hidratación">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success align-self-start mb-2">Bienestar</span>
+                        <h5 class="card-title">Muchas personas toman una copita antes de dormir para conciliar el sueño, pero no conocen sus verdaderas consecuencias.</h5>
+                        <p class="card-text small text-muted">14 de Abril, 2025</p>
+                        <p class="card-text">Puede elevar la frecuencia cardíaca y por ello, tener severas consecuencias sobre el descanso.</p>
+                        <a href="https://www.vitonica.com/prevencion/copita-antes-dormir-para-conciliar-sueno-tiene-precio-muy-alto-va-alla-calorias-vacias" class="btn btn-sm btn-outline-secondary mt-auto align-self-start">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+    
+             <div class="col-12 col-md-6 col-lg-4 blog-post" data-tags="nutricion" data-aos="fade-up">
+                <div class="card h-100 shadow-sm">
+                    <img src="/media/blog/lata_pescado.webp" class="card-img-top" alt="Lata de pescado">
+                     <div class="card-body d-flex flex-column">
+                         <span class="badge bg-primary align-self-start mb-2">Nutrición</span>
+                         <h5 class="card-title">Luis Zamora, nutricionista: "el pescado en conserva es saludable, pero no podemos sólo comer pescado de lata".</h5>
+                         <p class="card-text small text-muted">13 de Abril, 2025</p>
+                         <p class="card-text">Tienen más sal que el pescado fresco y pueden también tener más grasas y otros añadidos poco sanos.</p>
+                         <a href="https://www.vitonica.com/alimentos/luis-zamora-nutricionista-pescado-conserva-saludable-no-podemos-solo-comer-pescado-lata" class="btn btn-sm btn-outline-secondary mt-auto align-self-start">Leer Más</a>
+                     </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 blog-post" data-tags="musculacion" data-aos="fade-up" data-aos-delay="100">
+                 <div class="card h-100 shadow-sm">
+                    <img src="/media/blog/press_banca.webp" class="card-img-top" alt="Articulo de Press Banca">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger align-self-start mb-2">Musculación</span>
+                        <h5 class="card-title">Los mejores ejercicios para destruir tus marcas en el press de banca.</h5>
+                        <p class="card-text small text-muted">12 de Abril, 2025</p>
+                        <p class="card-text">El press de banca es el ejercicio estrella para medir la fuerza de empuje del tren superior</p>
+                         <a href="https://www.vitonica.com/entrenamiento/mejores-ejercicios-para-destruir-tus-marcas-press-banca-ninguno-pecho" class="btn btn-sm btn-outline-secondary mt-auto align-self-start">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+         </div> <hr class="my-5">
+         <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="mb-4">Comentarios (3)</h3>
+        
+                <div id="commentsSection">
+                    <div class="d-flex mb-4 comment" data-aos="fade-left">
+                        <div class="flex-shrink-0">
+                            <img src="https://via.placeholder.com/60/777/fff?text=U1" class="rounded-circle" alt="Avatar Placeholder">
+                            </div>
+                        <div class="ms-3 flex-grow-1">
+                            <div class="comment-bubble">
+                                <strong>Carlos Perez</strong> <small class="text-muted">- Hace 1 hora</small>
+                                <p class="mt-1 mb-2">¡Excelente artículo sobre nutrición post-entreno! Justo lo que necesitaba leer.</p>
+                                <div class="comment-actions">
+                                    <a href="#" class="reply-link small text-primary">Responder</a>
+                                    <a href="#" class="like-link small text-muted ms-2"><i class="far fa-thumbs-up"></i> (5)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="d-flex mb-4 ps-5 comment" data-aos="fade-left" data-aos-delay="100">
+                         <div class="flex-shrink-0">
+                            <img src="https://via.placeholder.com/50/ccc/000?text=U2" class="rounded-circle" alt="Avatar Placeholder">
+                             </div>
+                        <div class="ms-3 flex-grow-1">
+                             <div class="comment-bubble">
+                                <strong>Ana Gómez</strong> <small class="text-muted">- Hace 30 minutos</small>
+                                <p class="mt-1 mb-2">Totalmente de acuerdo, Carlos. Apliqué esos consejos y noté la diferencia.</p>
+                                 <div class="comment-actions">
+                                    <a href="#" class="reply-link small text-primary">Responder</a>
+                                    <a href="#" class="like-link small text-muted ms-2"><i class="far fa-thumbs-up"></i> (2)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                     <div class="d-flex mb-4 comment" data-aos="fade-left" data-aos-delay="200">
+                         <div class="flex-shrink-0">
+                            <img src="https://via.placeholder.com/60/999/eee?text=U3" class="rounded-circle" alt="Avatar Placeholder">
+                             </div>
+                         <div class="ms-3 flex-grow-1">
+                             <div class="comment-bubble">
+                                <strong>Luis Rodríguez</strong> <small class="text-muted">- Hace 3 horas</small>
+                                <p class="mt-1 mb-2">Muy interesante el concepto de descanso activo. ¿Alguna recomendación específica de actividad?</p>
+                                <div class="comment-actions">
+                                    <a href="#" class="reply-link small text-primary">Responder</a>
+                                    <a href="#" class="like-link small text-muted ms-2"><i class="far fa-thumbs-up"></i> (8)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5" data-aos="fade-up">
+                    <h4 class="mb-3">Deja tu Comentario</h4>
+                    <form id="commentForm">
+                        <input type="hidden" id="replyToCommentId" value="">
+                        <div class="mb-3">
+                            <label for="commentName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="commentName" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                             <label for="commentEmail" class="form-label">Email (opcional)</label>
+                             <input type="email" class="form-control" id="commentEmail" placeholder="tu@email.com">
+                         </div>
+                        <div class="mb-3">
+                            <label for="commentText" class="form-label">Comentario</label>
+                            <textarea class="form-control" id="commentText" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+                            <small id="replyingToInfo" class="form-text text-muted mt-1" style="display: none;"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Publicar Comentario</button>
+                        <button type="button" id="cancelReplyBtn" class="btn btn-secondary ms-2" style="display: none;">Cancelar Respuesta</button>
+                    </form>
+                </div>
+        
+
+        
+            </div>
+        </div>
+ </div>
+    </main>
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="footer-contenido">
+                <div class="columna-footer">
+                    <h4>Inscribirse al Gym</h4>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="email-newsletter" class="visually-hidden">Correo electrónico</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email-newsletter"
+                                placeholder="Tu correo electrónico"
+                                required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="columna-footer">
+                    <h4>Síguenos</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12A10 10 0 1 0 12 22v-7h-2v-3h2v-2c0-2 1-3 3-3h2v3h-1c-.6 0-1 .4-1 1v1h2.5l-.5 3H15v7a10 10 0 0 0 7-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="columna-footer">
+                    <h4>Encuéntranos</h4>
+                    <address>
+                        Av. Siempre Viva 742<br>
+                        San Salvador de Jujuy, Jujuy<br>
+                        Argentina
+                    </address>
+                    <div class="mapa-container">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-65.3318%2C-24.2109%2C-65.2718%2C-24.1709&layer=mapnik&marker=-24.1909%2C-65.3018"
+                            style="width: 100%; height: 200px; border: 0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación del Gimnasio FitnessPro">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3">
+            <p>&copy; <span id="current-year"></span> Gimnasio FitnessPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/blog.js"></script>
+    <script src="/js/footer.js"></script>
+</body>
+</html>

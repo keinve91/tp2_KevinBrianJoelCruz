@@ -1,0 +1,207 @@
+
+:root {
+    --color-primario: #0d6efd;
+    --color-secundario: #6c757d;
+    --color-fondo: #ffffff;
+    --color-texto: #212529;
+    --color-fondo-header-footer: #f8f9fa;
+    --color-borde: #dee2e6;
+    --color-link: #0d6efd;
+    --color-link-hover: #0a58ca;
+
+    --font-principal: 'Roboto', sans-serif;
+    --font-titulos: 'Montserrat', sans-serif;
+}
+
+
+
+/* --- Estilos Generales y Tipografía Base --- */
+body {
+    font-family: var(--font-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulos);
+    color: var(--color-texto);
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+/* --- Estilos del Header (Navbar Bootstrap) --- */
+header .navbar {
+    background-color: var(--color-fondo-header-footer) !important;
+    border-bottom: 1px solid var(--color-borde);
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header .navbar-brand {
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    color: var(--color-primario) !important;
+}
+header .navbar-brand .fa-dumbbell {
+    margin-right: 8px;
+}
+header .navbar-brand:hover {
+    color: var(--color-link-hover) !important;
+}
+
+header .nav-link {
+    color: var(--color-texto);
+    margin: 0 5px;
+}
+header .nav-link.active,
+header .nav-link:hover {
+    color: var(--color-primario);
+}
+
+/* Ajustes color toggler icon (tomado de Bootstrap y adaptado a variables) */
+header .navbar-toggler {
+    border-color: rgba(var(--bs-emphasis-color-rgb), 0.1);
+}
+
+
+header .dropdown-menu {
+    background-color: var(--color-fondo-header-footer);
+    border: 1px solid var(--color-borde);
+}
+header .dropdown-item {
+    color: var(--color-texto);
+}
+header .dropdown-item:hover,
+header .dropdown-item:focus {
+    color: var(--color-texto);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+/* --- Estilos del Footer --- */
+#footer {
+    background-color: var(--color-fondo-header-footer);
+    color: var(--color-texto);
+    border-top: 1px solid var(--color-borde);
+    transition: background-color 0.3s ease, color 0.3s ease, border-top 0.3s ease;
+}
+
+/* Layout básico para las columnas del footer usando Flexbox */
+#footer .footer-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#footer .columna-footer {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+#footer .columna-footer h4 {
+    font-family: var(--font-titulos);
+    margin-bottom: 1rem;
+    color: var(--color-primario);
+}
+
+#footer address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#footer .form-control {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 1px solid var(--color-borde);
+}
+#footer .form-control::placeholder {
+    color: var(--color-secundario);
+}
+#footer .btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    color: #fff;
+}
+#footer .btn-primary:hover {
+    opacity: 0.9;
+}
+
+#footer .redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#footer .redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--color-secundario);
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 0;
+    font-size: 24px;
+}
+
+#footer .redes-sociales svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    flex-shrink: 0;
+}
+
+#footer .redes-sociales a:hover {
+    color: var(--color-primario);
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+
+
+#footer .mapa-container iframe {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+    color: var(--color-secundario);
+}
+
+.bg-body-tertiary {
+    background-color: var(--color-fondo-header-footer) !important;
+}
+.card {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto);
+}
+
+.text-center { color: inherit; }
+.blockquote { color: inherit; }
+.blockquote-footer { color: var(--color-secundario); }
