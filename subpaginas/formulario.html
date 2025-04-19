@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/media/icono.png" type="image/png">
+    <title>FitnessPro</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container my-5">
+        <h2 style="text-align: center;">Contacto Avanzado</h2>
+
+        <form id="advancedContactForm" novalidate>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Ingresa un email válido.</div>
+                <div class="valid-feedback">¡Email válido!</div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" id="firstName" required>
+                    <div class="invalid-feedback">Nombre vacio.</div>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" id="lastName" required>
+                    <div class="invalid-feedback">Apellido vacio.</div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="phone" class="col-sm-2 col-form-label">Teléfono:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phone" pattern="^[0-9]{7,15}$" title="Solo números, mínimo 7 dígitos" required>
+                    <div class="invalid-feedback">solo numeros.</div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="dni" pattern="^[0-9]{8}$" title="Debe tener exactamente 8 dígitos" required>
+                    <div class="invalid-feedback">Debe tener 8 digitos.</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <div class="invalid-feedback">Mensaje obligatorio.</div>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label" for="terms">Aceptar términos y condiciones</label>
+                <div class="invalid-feedback">Debes aceptar los términos.</div>
+            </div>
+            <div id="spinner" class="text-center my-3" style="display: none;">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">¡Formulario enviado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por contactarte con nosotros. En breve te responderemos.
+                </div>
+                <div class="modal-footer">
+                    <a href="/index.html" class="btn btn-success">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/formulario.js"></script>
+</body>
+</html>
